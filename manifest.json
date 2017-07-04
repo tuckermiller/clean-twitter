@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+
+    "name": "clean-twitter",
+    "description": "This extension allows users to customize what modules appear on their Twitter UI and create themes for how they appear",
+    "version": "1.0",
+
+    "options_page": "options.html",
+
+    "browser_action": {
+    "default_popup": "options.html"
+    },
+
+    "content_scripts": [
+    {
+        "matches": ["http://*.twitter.com/*", "https://*.twitter.com/*"],
+        "js": ["stylesloader.js"]
+    }
+    ],
+
+    "permissions": [
+        "storage"
+    ],
+
+    "author": "Tucker Miller"
+}
