@@ -1,6 +1,10 @@
+// Load the current profile from Chrome's storage
+
 chrome.storage.sync.get('currentProfile', (options) => {
     var style = document.createElement('style');
     var styleInnerHtml = "";
+
+    // Build a style tag with the user's preferences
     if (options.currentProfile.sidebarCommon === false) {
         styleInnerHtml += ".SidebarCommonModules {display: none !important}";
     }
@@ -25,6 +29,8 @@ chrome.storage.sync.get('currentProfile', (options) => {
         styleInnerHtml += ".js-media-container {display: none !important}";
     }
     
+
+    // Append styles to the document
     style.innerHTML = styleInnerHtml;
     (document.head||document.documentElement).appendChild(style);
 });

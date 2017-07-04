@@ -1,0 +1,16 @@
+body {
+    font-size: 1em;
+}
+
+.group-label {
+    margin-bottom: 10px;
+}
+
+.options-subgroup {
+    background-color: #FAFAFA;
+    border: 3px dashed #DDD;
+    border-radius: 15px 5px;
+    max-width: 460px;
+    margin: 5px;
+    padding: 10px;
+}

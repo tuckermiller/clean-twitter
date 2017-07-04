@@ -1,61 +1,77 @@
 <!DOCTYPE html>
 <html>
-<head><title>clean-twitter settings</title></head>
+<head>
+    <title>clean-twitter Settings</title>
+    <link rel="stylesheet" href="styles.css">   
+</head>
 <body>
-
-<div>
-    <span>
-        Check the boxes for UI modules you would like to show, and uncheck boxes for modules you would like to hide:
-    </span>
     <div>
-        <div>
-            <input type="checkbox" id="sidebar-common">
-            <label for="sidebar-common">All sidebar modules</label>
-        </div>
+        <p class="group-label">
+            Check the boxes for UI modules you would like to show, and uncheck boxes for modules you would like to hide:
+        </p>
+        <div class="options-group">
+            <div class="options-subgroup">
+                <span class="subgroup-label">
+                    Profile area:
+                </span>
+                <div>
+                    <input type="checkbox" id="profile-canopy">
+                    <label for="profile-canopy">Profile canopy (entire profile section above feed)</label>
+                </div>
 
-        <div>
-            <input type="checkbox" id="wtf">
-            <label for="wtf">Who to follow</label>
-        </div>
+                <div>
+                    <input type="checkbox" id="profile-sidebar">
+                    <label for="profile-sidebar">Profile sidebar (description, photos, etc)</label>
+                </div>
 
-            <div>
-            <input type="checkbox" id="trends">
-            <label for="trends">Trends</label>
-        </div>
+                <div>
+                    <input type="checkbox" id="profile-avatar">
+                    <label for="profile-avatar">Profile avatar</label>
+                </div>
+            </div>
 
-        <div>
-            <input type="checkbox" id="profile-canopy">
-            <label for="profile-canopy">Profile canopy (entire profile section above feed)</label>
-        </div>
+            <div class="options-subgroup">
+                <span class="subgroup-label">
+                    Sidebar modules:
+                </span>
+                <div>
+                    <input type="checkbox" id="sidebar-common">
+                    <label for="sidebar-common">All sidebar modules</label>
+                </div>
 
-        <div>
-            <input type="checkbox" id="profile-sidebar">
-            <label for="profile-sidebar">Profile sidebar (description, photos, etc)</label>
-        </div>
+                <div>
+                    <input type="checkbox" id="wtf">
+                    <label for="wtf">Who to follow</label>
+                </div>
 
-        <div>
-            <input type="checkbox" id="profile-avatar">
-            <label for="profile-avatar">Profile avatar</label>
-        </div>
+                    <div>
+                    <input type="checkbox" id="trends">
+                    <label for="trends">Trends</label>
+                </div>
+            </div>
 
-        <div>
-            <input type="checkbox" id="tweet-avatar">
-            <label for="tweet-avatar">Tweet avatar</label>
-        </div>
+            <div class="options-subgroup">
+                <span class="subgroup-label">
+                    Tweets:
+                </span>
+                <div>
+                    <input type="checkbox" id="tweet-avatar">
+                    <label for="tweet-avatar">Tweet avatar</label>
+                </div>
 
-        <div>
-            <input type="checkbox" id="wtf-stream">
-            <label for="wtf-stream">Tweet images and other media</label>
-        </div>
+                <div>
+                    <input type="checkbox" id="wtf-stream">
+                    <label for="wtf-stream">Tweet images and other media</label>
+                </div>
 
-        <div>
-            <input type="checkbox" id="link-summary">
-            <label for="link-summary">Link summary card</label>
+                <div>
+                    <input type="checkbox" id="link-summary">
+                    <label for="link-summary">Link summary card</label>
+                </div>
+            </div>
         </div>
+        <button id="save">Save profile</button>
     </div>
-    <button id="save">Save profile</button>
-</div>
-
-<script src="options.js"></script>
+    <script src="options.js"></script>
 </body>
 </html>
