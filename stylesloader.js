@@ -29,7 +29,13 @@ chrome.storage.sync.get('currentProfile', (options) => {
         styleInnerHtml += ".js-media-container {display: none !important}";
     }
     
+    if (options.currentProfile.adaptiveMedia === false) {
+        styleInnerHtml += ".AdaptiveMedia {display: none !important}";
+    }
 
+    if (options.currentProfile.tweetAvatar === false) {
+        styleInnerHtml += ".avatar {display: none !important}";
+    }
     // Append styles to the document
     style.innerHTML = styleInnerHtml;
     (document.head||document.documentElement).appendChild(style);

@@ -14,3 +14,17 @@ body {
     margin: 5px;
     padding: 10px;
 }
+
+button {
+    border-radius: 5px;
+    background-color: #FAFAFA;
+    border: 3px solid #DDD;
+    border-color: #DDD #AAA #AAA #DDD;    
+    padding: 2px 5px;
+    font-size: 1em;
+}
+
+button:hover {
+    border: 3px solid #DDF;
+    border-color: #DDF #BBD #BBD #DDF;
+}

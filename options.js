@@ -1,3 +1,5 @@
+// Load saved options
+
 // Saves options to chrome.storage
 function saveOptions() {
     var options = {};
@@ -10,6 +12,7 @@ function saveOptions() {
     options["tweetAvatar"] = document.getElementById('tweet-avatar').checked;
     options["wtfStream"] = document.getElementById('wtf-stream').checked;
     options["linkSummary"] = document.getElementById('link-summary').checked;
+    options["adaptiveMedia"] = document.getElementById('adaptive-media').checked;
     chrome.storage.sync.set({
         currentProfile: options
     }, function() {
